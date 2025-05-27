@@ -6,9 +6,9 @@ class BsHeader extends HTMLElement {
           <div class="nav-logo">
   <a href="index.html">
     <h2>
-      <i class="fas fa-car"></i>
+      <i ></i>
       <span class="logo-full">BS Tours & Travels</span>
-      <span class="logo-short">BS Travels</span>
+      <span class="logo-short">BS Tours and Travels</span>
     </h2>
   </a>
 </div>
