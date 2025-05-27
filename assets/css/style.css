@@ -344,7 +344,7 @@
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             background-image: url('https://www.hok.com/wp-content/uploads/2019/05/Indira-Gandhi-International-Airport-1-1900-1600x1069.jpg');
             background-size:cover;
-             background-position: 10% center;
+            background-position: center 15%;
             background-attachment: scroll;
             background-repeat: no-repeat;
         }
@@ -1477,6 +1477,8 @@
         max-width: 300px;
          
     }
+
+     
 }
 
 
