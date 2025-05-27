@@ -342,10 +342,11 @@
             width: 100%;
             height: 100%;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            background-image: url('https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
-            background-size: cover;
-            background-position: center;
+            background-image: url('https://www.hok.com/wp-content/uploads/2019/05/Indira-Gandhi-International-Airport-1-1900-1600x1069.jpg');
+            background-size:cover;
+             background-position: 10% center;
             background-attachment: scroll;
+            background-repeat: no-repeat;
         }
 
         .hero-overlay {
@@ -354,7 +355,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.8) 0%, rgba(118, 75, 162, 0.9) 100%);
+            /* background: linear-gradient(135deg, rgba(102, 126, 234, 0.8) 0%, rgba(118, 75, 162, 0.1) 100%); */
         }
 
         .hero-content {
@@ -366,10 +367,12 @@
         }
 
         .hero-title {
-            font-size: 3.5rem;
-            font-weight: 700;
-            margin-bottom: 20px;
-            line-height: 1.2;
+             font-size: 2.5rem;
+         font-weight: 700;
+         color: #eee8e8;
+         text-align: center;
+         margin-bottom: 30px;
+         letter-spacing: 0.5px;
         }
 
         .hero-subtitle {
@@ -377,6 +380,7 @@
             margin-bottom: 40px;
             opacity: 0.9;
             font-weight: 300;
+            color: #eee8e8;
         }
 
         .hero-buttons {
@@ -1468,7 +1472,7 @@
     }
 
     .btn {
-        width: 58%;
+        width: 63%;
         max-width: 300px;
          
     }
@@ -1532,27 +1536,4 @@
     text-align: center;
   }
 
- 
-
-  
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
