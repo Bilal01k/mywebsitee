@@ -505,6 +505,7 @@
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 2rem;
             margin-bottom: 3rem;
+             
         }
         
         .vehicle-card {
@@ -513,6 +514,7 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
             text-align: center;
+            
         }
         
         .vehicle-card:hover {
@@ -524,13 +526,15 @@
             height: 200px;
             width: 100%;
             object-fit: cover;
+            
         }
         
         
         
         .vehicle-info {
             padding: 1.5rem;
-            background: white;
+            background: rgb(247, 247, 247);
+             
         }
         
         .vehicle-info h3 {
