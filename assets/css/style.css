@@ -1317,14 +1317,14 @@
                 grid-template-columns: 1fr;
             }
 
-            .about-content {
+            /* .about-content {
                 grid-template-columns: 1fr;
                 gap: 40px;
             }
 
             .about-text .section-header {
                 text-align: center;
-            }
+            } */
 
             .features-grid {
                 grid-template-columns: 1fr;
@@ -1490,6 +1490,53 @@
     gap: 8px;
   }
 }
+
+
+@media (max-width: 768px) {
+  /* Make about-content stack vertically */
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Center paragraphs and why choose us text */
+  .about-description p {
+    text-align: center;
+   }
+
+  /* Image full width */
+  .about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  /* Force order: header, subtitle, image, paragraphs, why choose us */
+  .about-text .section-header {
+    order: 1; /* heading + subtitle container */
+    text-align: left; /* keep left aligned */
+  }
+
+  .about-image {
+    order: 2;
+  }
+
+  .about-description {
+    order: 3;
+    text-align: center; /* paragraphs centered */
+  }
+
+  .about h2{
+    font-size: 23px;
+    text-align: center;
+  }
+
+ 
+
+  
+
+
 
     
 
