@@ -31,7 +31,7 @@ class BsHeader extends HTMLElement {
         <p>BS Tours & Travels</p>
       </div>
 
-      <div class="quick-actions">
+      <div class="quick-actions hidden">
         <a href="tel:+918050465875" class="quick-btn call-btn">
             <i class="fas fa-phone"></i>
         </a>
@@ -176,6 +176,21 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   }
+
+  // Show quick actions only after scrolling past hero section
+const quickActions = document.querySelector('.quick-actions');
+const heroSection = document.querySelector('.hero');
+
+if (quickActions && heroSection) {
+  window.addEventListener('scroll', () => {
+    const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
+    if (window.scrollY > heroBottom) {
+      quickActions.classList.remove('hidden');
+    } else {
+      quickActions.classList.add('hidden');
+    }
+  });
+}
 
 
 
