@@ -1473,6 +1473,24 @@
          
     }
 }
+
+
+/* On mobile, center and stack vertically */
+@media (max-width: 600px) {
+  .service-features {
+    flex-direction: column;   /* stack vertically */
+    align-items: center;      /* center horizontally */
+    text-align: center;       /* center text inside spans */
+  }
+  
+  .service-features span {
+    width: 100%;              /* full width on mobile */
+    display: flex;            /* to align icon and text nicely */
+    justify-content: center;  /* center icon + text horizontally */
+    gap: 8px;
+  }
+}
+
     
 
 
