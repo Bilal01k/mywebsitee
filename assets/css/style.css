@@ -350,7 +350,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.8) 0%, rgba(118, 75, 162, 0.8) 100%);
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.8) 0%, rgba(118, 75, 162, 0.9) 100%);
         }
 
         .hero-content {
@@ -1299,7 +1299,7 @@
                 font-size: 1.1rem;
             }
 
-            .hero-buttons {
+            /* .hero-buttons {
                 flex-direction: column;
                 align-items: center;
             }
@@ -1307,7 +1307,7 @@
             .btn {
                 width: 100%;
                 max-width: 300px;
-            }
+            } */
 
             .services-grid {
                 grid-template-columns: 1fr;
@@ -1453,6 +1453,21 @@
   .hero-background {
     background-attachment: fixed;
   }
+}
+
+
+
+@media (max-width: 767px) {
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 58%;
+        max-width: 300px;
+         
+    }
 }
     
 
