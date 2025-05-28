@@ -321,7 +321,7 @@
 .scroll-top.visible {
     display: block;
 }          
-
+         
 
             /* Hero Section */
         .hero {
@@ -367,12 +367,11 @@
         }
 
         .hero-title {
-             font-size: 2.5rem;
-         font-weight: 700;
-         color: #eee8e8;
-         text-align: center;
-         margin-bottom: 30px;
-         letter-spacing: 0.5px;
+         font-size: 2rem;
+         font-weight: bold;
+        margin-bottom: 20px;
+         line-height: 1.2;
+        
         }
 
         .hero-subtitle {
@@ -380,7 +379,7 @@
             margin-bottom: 40px;
             opacity: 0.9;
             font-weight: 300;
-            color: #eee8e8;
+            color: #ffffff;
         }
 
         .hero-buttons {
@@ -389,6 +388,11 @@
             justify-content: center;
             flex-wrap: wrap;
         }
+/* 
+        .highlight{
+            color: #032be0;
+             
+        } */
 
 
 
