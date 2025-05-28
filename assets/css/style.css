@@ -350,12 +350,17 @@
         }
 
         .hero-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            /* background: linear-gradient(135deg, rgba(102, 126, 234, 0.8) 0%, rgba(118, 75, 162, 0.1) 100%); */
+            background:  url('https://www.hok.com/wp-content/uploads/2019/05/Indira-Gandhi-International-Airport-1-1900-1600x1069.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 80px 16px 40px;
+  box-sizing: border-box;
+  text-align: center;
         }
 
         .hero-content {
@@ -388,9 +393,9 @@
             justify-content: center;
             flex-wrap: wrap;
         }
-/* 
-        .highlight{
-            color: #032be0;
+
+        /* .highlight{
+            color: #04124d;
              
         } */
 
@@ -427,7 +432,7 @@
 
          /* Services Preview */
         .services-preview {
-            background: #f8f9ff;
+            background: #fff;
         }
 
         .services-grid {
@@ -437,7 +442,7 @@
         }
 
         .service-card {
-            background: #fff;
+           background: #f8f9ff;
             padding: 40px 30px;
             border-radius: 20px;
             text-align: center;
@@ -502,6 +507,7 @@
          /* Fleet Section */
         .fleet {
             padding: 80px 0;
+            background: #f8f9ff;
         }
         
         .fleet-grid {
@@ -530,6 +536,7 @@
             height: 200px;
             width: 100%;
             object-fit: cover;
+            background-color: #fff;
             
         }
         
@@ -537,7 +544,7 @@
         
         .vehicle-info {
             padding: 1.5rem;
-            background: rgb(247, 247, 247);
+             background: #fff;
              
         }
         
@@ -671,7 +678,8 @@
 
         /* Testimonials */
         .testimonials {
-          background: #f8f9ff;
+          
+          background: #fff;
         }
 
         .testimonials-grid {
@@ -681,7 +689,7 @@
         }
 
         .testimonial-card {
-            background: #fff;
+            background: #f8f9ff;
             padding: 30px;
             border-radius: 20px;
             transition: all 0.3s ease;
