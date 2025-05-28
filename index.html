@@ -3,311 +3,342 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CityRide Cabs - Premium cab services in Bangalore. Airport transfers, outstation trips, and hourly city rides. Book now via call or WhatsApp.">
-    <meta name="keywords" content="cab service, taxi, Bangalore, airport transfer, outstation travel, city rides">
-     <title>BS Tours And Travels - Premium Cab Services in Bangalore</title>
+    <meta name="description" content="BS Tours & Travels - Premium cab services in Bangalore. Airport transfers, outstation trips, and hourly city rides. Book now via call or WhatsApp.">
+    <meta name="keywords" content="cab service, taxi, Bangalore, airport transfer, outstation travel, city rides, BS Tours, Travels">
+    <meta name="author" content="BS Tours & Travels">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="BS Tours And Travels - Premium Cab Services in Bangalore">
+    <meta property="og:description" content="Experience comfort, safety, and punctuality with BS Tours and Travels. Airport transfers, outstation trips, and city rides.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bstours.com">
+    <meta property="og:image" content="./assets/images/logo.png">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="BS Tours And Travels - Premium Cab Services">
+    <meta name="twitter:description" content="Premium cab services in Bangalore - Airport transfers, outstation trips, city rides">
+    
+    <title>BS Tours And Travels - Premium Cab Services in Bangalore</title>
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style">
+    <link rel="preload" href="./assets/css/style.css" as="style">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "BS Tours & Travels",
+        "description": "Premium cab services in Bangalore",
+        "url": "https://bstours.com",
+        "telephone": "+91-8050465875",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Bangalore",
+            "addressRegion": "Karnataka",
+            "addressCountry": "IN"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "12.9716",
+            "longitude": "77.5946"
+        },
+        "openingHours": "Mo-Su 00:00-23:59",
+        "priceRange": "₹₹",
+        "serviceArea": {
+            "@type": "City",
+            "name": "Bangalore"
+        }
+    }
+    </script>
 </head>
 <body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     
-     <bs-header></bs-header>
+    <!-- Header Component -->
+    <bs-header></bs-header>
 
-
-
-     
-     <!-- Hero section -->
-      <!-- Home Section -->
-<section id="home" class="hero">
-    <div class="hero-background">
-        <div class="hero-overlay"></div>
-    </div>
-    <div class="hero-content">
-        <div class="container">
-            <div class="hero-text animate-fade-in">
-                <h1 class="hero-title">Your Reliable Cab Service in <span class="highlight">Bangalore</span></h1>
-                <p class="hero-subtitle">
-                    Experience comfort, safety, and punctuality with 
-                    <span class="highlight">BS Tours and Travels</span>
-                </p>
-                <div class="hero-buttons">
-                    <a href="#homePage" class="btn btn-primary">
-                        <i class="fas fa-car"></i> Book Now
-                    </a>
-                    <a href="https://wa.me/918618429796" class="btn btn-secondary" target="_blank">
-                            <i class="fab fa-whatsapp"></i> WhatsApp
-                        </a>
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-background">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <div class="container">
+                    <div class="hero-text animate-fade-in">
+                        <h1 class="hero-title">Your Reliable Cab Service in <span class="highlight">Bangalore</span></h1>
+                        <p class="hero-subtitle">
+                            Experience comfort, safety, and punctuality with 
+                            <span class="highlight">BS Tours and Travels</span>
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#fleet" class="btn btn-primary" aria-label="Book a cab now">
+                                <i class="fas fa-car" aria-hidden="true"></i> Book Now
+                            </a>
+                            <a href="https://wa.me/918618429796?text=Hi%2C%20I%20want%20to%20book%20a%20cab" 
+                               class="btn btn-secondary" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               aria-label="Contact us on WhatsApp">
+                                <i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="hero-scroll">
-        <i class="fas fa-chevron-down"></i>
-    </div>
-</section>
+            <button class="hero-scroll" aria-label="Scroll to services section">
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+            </button>
+        </section>
 
-
-
-
-
-<!-- 
-    <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="hero-overlay"></div>
-        </div>
-        <div class="hero-content">
+        <!-- Services Preview Section -->
+        <section id="services" class="services-preview">
             <div class="container">
-                <div class="hero-text animate-fade-in">
-                    <h1 class="hero-title"><span>Reliable Rides</span> in Bangalore</h1>
-                    <div class="hero-buttons">
-                        <a href="tel:+918050465875" class="btn btn-primary">
-                            <i class="fas fa-phone"></i> Call Now
-                        </a>
-                        <a href="https://wa.me/918618429796" class="btn btn-secondary" target="_blank">
-                            <i class="fab fa-whatsapp"></i> WhatsApp
-                        </a>
-                    </div>
+                <header class="section-header">
+                    <h2>Our Premium Services</h2>
+                    <p>Choose from our range of professional cab services</p>
+                </header>
+                <div class="services-grid">
+                    <article class="service-card animate-slide-up">
+                        <div class="service-icon">
+                            <i class="fas fa-plane" aria-hidden="true"></i>
+                        </div>
+                        <h3>Airport Transfers</h3>
+                        <p>Reliable and punctual airport pickup and drop services. Track your flight and enjoy hassle-free transfers.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Flight Tracking</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Meet & Greet</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> 24/7 Available</li>
+                        </ul>
+                    </article>
+                    <article class="service-card animate-slide-up">
+                        <div class="service-icon">
+                            <i class="fas fa-road" aria-hidden="true"></i>
+                        </div>
+                        <h3>Outstation Trips</h3>
+                        <p>Comfortable long-distance travel to any destination. Professional drivers and well-maintained vehicles.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Long Distance</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Experienced Drivers</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Flexible Packages</li>
+                        </ul>
+                    </article>
+                    <article class="service-card animate-slide-up">
+                        <div class="service-icon">
+                            <i class="fas fa-clock" aria-hidden="true"></i>
+                        </div>
+                        <h3>Hourly City Rides</h3>
+                        <p>Flexible hourly bookings for city travel, shopping, meetings, or sightseeing around Bangalore.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Hourly Basis</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Multiple Stops</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Waiting Time</li>
+                        </ul>
+                    </article>
                 </div>
             </div>
-        </div>
-        <div class="hero-scroll">
-            <i class="fas fa-chevron-down"></i>
-        </div>
-    </section>   -->
+        </section>
 
-
-    <!-- Services Preview -->
-    <section class="services-preview">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Premium Services</h2>
-                <p>Choose from our range of professional cab services</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card animate-slide-up">
-                    <div class="service-icon">
-                        <i class="fas fa-plane"></i>
-                    </div>
-                    <h3>Airport Transfers</h3>
-                    <p>Reliable and punctual airport pickup and drop services. Track your flight and enjoy hassle-free transfers.</p>
-                    <div class="service-features">
-                        <span><i class="fas fa-check"></i> Flight Tracking</span>
-                        <span><i class="fas fa-check"></i> Meet & Greet</span>
-                        <span><i class="fas fa-check"></i> 24/7 Available</span>
-                    </div>
-                </div>
-                <div class="service-card animate-slide-up">
-                    <div class="service-icon">
-                        <i class="fas fa-road"></i>
-                    </div>
-                    <h3>Outstation Trips</h3>
-                    <p>Comfortable long-distance travel to any destination. Professional drivers and well-maintained vehicles.</p>
-                    <div class="service-features">
-                        <span><i class="fas fa-check"></i> Long Distance</span>
-                        <span><i class="fas fa-check"></i> Experienced Drivers</span>
-                        <span><i class="fas fa-check"></i> Flexible Packages</span>
-                    </div>
-                </div>
-                <div class="service-card animate-slide-up">
-                    <div class="service-icon">
-                        <i class="fas fa-clock"></i>
-                    </div>
-                    <h3>Hourly City Rides</h3>
-                    <p>Flexible hourly bookings for city travel, shopping, meetings, or sightseeing around Bangalore.</p>
-                    <div class="service-features">
-                        <span><i class="fas fa-check"></i> Hourly Basis</span>
-                        <span><i class="fas fa-check"></i> Multiple Stops</span>
-                        <span><i class="fas fa-check"></i> Waiting Time</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-     <!-- Fleet Section -->
-    <section  id="homePage" class="fleet">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Fleet</h2>
-                <p>Find the Right Vehicle for Every Occasion</p>
-            </div>
-           <div class="fleet-grid">
-                    <div class="vehicle-card">
+        <!-- Fleet Section -->
+        <section id="fleet" class="fleet">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Our Fleet</h2>
+                    <p>Find the Right Vehicle for Every Occasion</p>
+                </header>
+                <div class="fleet-grid">
+                    <article class="vehicle-card">
                         <div class="vehicle-img">
-                    <img src="./assets/images/swiftdziretour.png" alt="Hatchback" class="vehicle-img">
+                            <img src="./assets/images/swiftdziretour.png" 
+                                 alt="Swift Dzire - 4 seater sedan car" 
+                                 loading="lazy"
+                                 width="300" 
+                                 height="200">
                         </div>
                         <div class="vehicle-info">
                             <h3>Swift Dzire</h3>
                             <div class="vehicle-specs">
-                                <span><i class="fas fa-users"></i> 4 Seater</span>
-                                <span><i class="fas fa-suitcase"></i> 2 Bags</span>
+                                <span><i class="fas fa-users" aria-hidden="true"></i> 4 Seater</span>
+                                <span><i class="fas fa-suitcase" aria-hidden="true"></i> 2 Bags</span>
                             </div>
                             <p>Perfect for short trips within the city</p>
                             <div class="vehicle-price">₹899</div>
-                            <a href="https://wa.me/918618429796?text=Hi, I want to book Swift Dzire" class="fbtn">Book Now</a>
+                            <a href="https://wa.me/918618429796?text=Hi%2C%20I%20want%20to%20book%20Swift%20Dzire" 
+                               class="fbtn" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               aria-label="Book Swift Dzire via WhatsApp">
+                                Book Now
+                            </a>
                         </div>
-                    </div>
-                    <div class="vehicle-card">
+                    </article>
+                    <article class="vehicle-card">
                         <div class="vehicle-img">
-                    <img src="./assets/images/Accent.png" alt="Hatchback" class="vehicle-img">
+                            <img src="./assets/images/Accent.png" 
+                                 alt="Hyundai Accent - 4 seater sedan car" 
+                                 loading="lazy"
+                                 width="300" 
+                                 height="200">
                         </div>
                         <div class="vehicle-info">
                             <h3>Accent</h3>
                             <div class="vehicle-specs">
-                                <span><i  class="fas fa-users"></i> 4 Seater</span>
-                                <span><i class="fas fa-suitcase"></i> 3 Bags</span>
+                                <span><i class="fas fa-users" aria-hidden="true"></i> 4 Seater</span>
+                                <span><i class="fas fa-suitcase" aria-hidden="true"></i> 3 Bags</span>
                             </div>
                             <p>Comfortable ride for business or leisure</p>
                             <div class="vehicle-price">₹899</div>
-                            <a href="https://wa.me/918618429796?text=Hi, I want to book Accent" class="fbtn">Book Now</a>
+                            <a href="https://wa.me/918618429796?text=Hi%2C%20I%20want%20to%20book%20Accent" 
+                               class="fbtn" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               aria-label="Book Accent via WhatsApp">
+                                Book Now
+                            </a>
                         </div>
-                    </div>
-                    <div class="vehicle-card">
+                    </article>
+                    <article class="vehicle-card">
                         <div class="vehicle-img">
-                    <img src="./assets/images/Innovacrysta.png" alt="Hatchback" class="vehicle-img">
+                            <img src="./assets/images/Innovacrysta.png" 
+                                 alt="Toyota Innova Crysta - 6-7 seater SUV" 
+                                 loading="lazy"
+                                 width="300" 
+                                 height="200">
                         </div>
                         <div class="vehicle-info">
                             <h3>Innova Crysta</h3>
                             <div class="vehicle-specs">
-                                <span><i class="fas fa-users"></i> 6-7 Seater</span>
-                                <span><i class="fas fa-suitcase"></i> 5 Bags</span>
+                                <span><i class="fas fa-users" aria-hidden="true"></i> 6-7 Seater</span>
+                                <span><i class="fas fa-suitcase" aria-hidden="true"></i> 5 Bags</span>
                             </div>
                             <p>Spacious for families or groups</p>
                             <div class="vehicle-price">₹899</div>
-                            <a href="https://wa.me/918618429796?text=Hi, I want to book Innova Crysta" class="fbtn">Book Now</a>
+                            <a href="https://wa.me/918618429796?text=Hi%2C%20I%20want%20to%20book%20Innova%20Crysta" 
+                               class="fbtn" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               aria-label="Book Innova Crysta via WhatsApp">
+                                Book Now
+                            </a>
                         </div>
-                    </div>
+                    </article>
+                </div>
+                <div class="view-all-container">
+                    <a href="service.html#servicesPage" class="fbtn btn-large">
+                        View All Our Fleet
+                    </a>
                 </div>
             </div>
-        
-        <div class="view-all-container">
-            <a href="service.html#servicesPage" class="fbtn btn-large">
-                View All Our Fleet
-            </a>
-        </div>
+        </section>
 
-    </section>
-
-
-
-     <!-- Testimonials -->
-    <section class="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <h2>What Our Customers Say</h2>
-                <p>Real experiences from our valued customers</p>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <header class="section-header">
+                    <h2>What Our Customers Say</h2>
+                    <p>Real experiences from our valued customers</p>
+                </header>
+                <div class="testimonials-grid">
+                    <article class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars" aria-label="5 star rating">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                            </div>
+                            <blockquote>
+                                <p>"Excellent service! The driver was punctual and professional. Made my airport transfer stress-free. Highly recommended!"</p>
+                            </blockquote>
                         </div>
-                        <p>"Excellent service! The driver was punctual and professional. Made my airport transfer stress-free. Highly recommended!"</p>
-                    </div>
-                    <div class="testimonial-author">
-                         <div>
-                            <h4>Rajesh Kumar</h4>
-                            <span>Business Executive</span>
+                        <footer class="testimonial-author">
+                            <div>
+                                <h4>Rajesh Kumar</h4>
+                                <span>Business Executive</span>
+                            </div>
+                        </footer>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars" aria-label="5 star rating">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                            </div>
+                            <blockquote>
+                                <p>"Used BS Tours for our Mysore trip. The car was clean, driver was courteous, and the journey was comfortable. Great value for money!"</p>
+                            </blockquote>
                         </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                        <footer class="testimonial-author">
+                            <div>
+                                <h4>Priya Sharma</h4>
+                                <span>Software Engineer</span>
+                            </div>
+                        </footer>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars" aria-label="5 star rating">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                            </div>
+                            <blockquote>
+                                <p>"Reliable and affordable cab service. I use them regularly for my office commute. Never had any issues. Keep up the good work!"</p>
+                            </blockquote>
                         </div>
-                        <p>"Used CityRide for our Mysore trip. The car was clean, driver was courteous, and the journey was comfortable. Great value for money!"</p>
-                    </div>
-                    <div class="testimonial-author">
-                         <div>
-                            <h4>Priya Sharma</h4>
-                            <span>Software Engineer</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p>"Reliable and affordable cab service. I use them regularly for my office commute. Never had any issues. Keep up the good work!"</p>
-                    </div>
-                    <div class="testimonial-author">
-                         <div>
-                            <h4>Amit Patel</h4>
-                            <span>Marketing Manager</span>
-                        </div>
-                    </div>
+                        <footer class="testimonial-author">
+                            <div>
+                                <h4>Amit Patel</h4>
+                                <span>Marketing Manager</span>
+                            </div>
+                        </footer>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-
-
-     
-
-    
-
-   
-
-
-
-
-      <!-- Footer -->
+    <!-- Footer Component -->
     <special-footer></special-footer>
-     
 
-    
+    <!-- Scroll to Top Button -->
+    <button id="scrollTop" class="scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up" aria-hidden="true"></i>
+    </button>
 
-
-
-     
-
-
-    
-    
-
-
-
+    <!-- Scripts -->
     <script src="./assets/js/script.js"></script>
-     
-     
-   
     
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- Error Handling -->
+    <script>
+        window.addEventListener('error', function(e) {
+            console.error('JavaScript Error:', e.error);
+        });
+        
+        window.addEventListener('unhandledrejection', function(e) {
+            console.error('Unhandled Promise Rejection:', e.reason);
+        });
+    </script>
 </body>
 </html>
