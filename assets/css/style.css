@@ -314,7 +314,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('/assets/images/herobackround.jpg');
+  background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/assets/images/herobackround.jpg');
   z-index: 1;
   background-size:cover;
   background-position: bottom ;
@@ -337,15 +337,17 @@ section {
   margin-bottom: 1.5rem;
   line-height: 1.2;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+ 
    
 }
 
 .hero-subtitle {
   font-size: clamp(1rem, 2.5vw, 1.5rem);
   margin-bottom: 2.5rem;
-  opacity: 0.9;
-  font-weight: 300;
+  opacity: 1;
+  font-weight: 400;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+   
 }
 
 .hero-buttons {
@@ -1219,6 +1221,20 @@ section {
     flex-direction: column;
     align-items: center;
   }
+
+  .hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/assets/images/herobackround.jpg');
+  z-index: 1;
+  background-size:cover;
+  background-position: bottom ;
+  background-attachment: scroll;
+  background-repeat: no-repeat ;
+} 
 
   
 
