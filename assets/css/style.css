@@ -305,6 +305,7 @@ section {
   text-align: center;
   color: var(--white);
   overflow: hidden;
+  margin-top: 0;
 }
 
 .hero-background {
@@ -316,7 +317,7 @@ section {
   background: url('https://www.hok.com/wp-content/uploads/2019/05/Indira-Gandhi-International-Airport-1-1900-1600x1069.jpg');
   z-index: 1;
   background-size:cover;
-  background-position: center 15%;
+  background-position: bottom ;
   background-attachment: scroll;
   background-repeat: no-repeat ;
 } 
@@ -1217,6 +1218,10 @@ section {
     align-items: center;
   }
 
+  .hero{
+    height: 99vh;
+  }
+
   .btn {
     width: 60%;
     max-width: 300px;
@@ -1240,6 +1245,9 @@ section {
   .logo-short {
     display: inline;
   }
+
+
+   
 }
 
 @media (max-width: 480px) {
