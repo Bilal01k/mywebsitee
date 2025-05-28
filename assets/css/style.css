@@ -42,6 +42,7 @@ body {
 section {
   padding: 80px 0;
   position: relative;
+  margin-top: 40px;
 }
 
 .section-header {
@@ -431,6 +432,7 @@ section {
   color: var(--text);
   margin-bottom: 1.5rem;
   line-height: 1.6;
+ 
 }
 
 .service-features {
@@ -646,6 +648,7 @@ section {
 /* About Section - Restructured */
 .about {
   background: var(--white);
+  margin-top: 50px;
 }
 
 .about-content {
@@ -656,8 +659,9 @@ section {
 }
 
 .about-text .section-header {
-  text-align: left;
+  text-align:start;
   margin-bottom: 2rem;
+  
 }
 
 .about-description p {
@@ -665,6 +669,7 @@ section {
   color: var(--text);
   font-size: 1rem;
   line-height: 1.7;
+  
 }
 
 .why-choose-us {
@@ -675,6 +680,8 @@ section {
   font-size: 1.5rem;
   color: var(--dark);
   margin-bottom: 1.5rem;
+ 
+
 }
 
 .features-grid {
@@ -900,6 +907,7 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
+  margin-top: 40px;
 }
 
 .contact-info {
@@ -1162,6 +1170,15 @@ section {
   .features-grid {
     grid-template-columns: 1fr;
   }
+
+  .service-features li{
+   align-items: center;
+   justify-content: center;
+  }
+
+
+
+
 }
 
 @media (max-width: 768px) {
@@ -1201,7 +1218,7 @@ section {
   }
 
   .btn {
-    width: 100%;
+    width: 60%;
     max-width: 300px;
     justify-content: center;
   }
@@ -1236,6 +1253,7 @@ section {
 
   .section-header {
     margin-bottom: 2rem;
+     
   }
 
   .hero-title {
@@ -1269,6 +1287,23 @@ section {
   .stat-item p {
     font-size: 1rem;
   }
+
+  .about-description p{
+    text-align: center;
+  }
+
+  .why-choose-us h3{
+    text-align: center;
+    font-size: 1.3rem;
+  }
+
+
+
+
+
+
+
+
 }
 
 /* Animation Classes - Optimized */
