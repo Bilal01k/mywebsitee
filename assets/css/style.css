@@ -314,7 +314,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/assets/images/herobackround.jpg');
+  background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/assets/images/herobackround.jpg');
   z-index: 1;
   background-size:cover;
   background-position: bottom ;
@@ -332,7 +332,7 @@ section {
 }
 
 .hero-title {
-  font-size: clamp(2rem, 5vw, 3rem);
+  font-size: clamp(3.5rem, 5.5vw, 3.5rem);
   font-weight: 700;
   margin-bottom: 1.5rem;
   line-height: 1.2;
@@ -1222,19 +1222,7 @@ section {
     align-items: center;
   }
 
-  .hero-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/assets/images/herobackround.jpg');
-  z-index: 1;
-  background-size:cover;
-  background-position: bottom ;
-  background-attachment: scroll;
-  background-repeat: no-repeat ;
-} 
+  
 
   
 
