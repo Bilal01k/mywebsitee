@@ -320,6 +320,8 @@ section {
   background-position: bottom ;
   background-attachment: scroll;
   background-repeat: no-repeat ;
+  will-change: transform;
+  transform: translateZ(0);
 } 
 
 
