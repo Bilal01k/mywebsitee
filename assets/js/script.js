@@ -27,10 +27,7 @@ class BsHeader extends HTMLElement {
         </div>
       </nav>
 
-      <div id="loader" class="loader">
-        <div class="spinner"></div>
-        <p>BS Tours & Travels</p>
-      </div>
+      <!-- REMOVED LOADER - This was causing the fade delay -->
 
       <div class="quick-actions hidden">
         <a href="tel:+918050465875" class="quick-btn call-btn" aria-label="Call us">
@@ -40,6 +37,10 @@ class BsHeader extends HTMLElement {
           <i class="fab fa-whatsapp"></i>
         </a>
       </div>
+
+      <button id="scrollTop" class="scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up" aria-hidden="true"></i>
+      </button>
     `;
 
     // Initialize component functionality
@@ -177,12 +178,12 @@ class BSToursApp {
 
   initializeApp() {
     this.setupActiveNavigation();
-    this.setupScrollAnimations();
+    this.setupScrollAnimationsFixed(); // FIXED VERSION
     this.setupScrollToTop();
     this.setupContactForm();
     this.setupHeroScroll();
     this.setupQuickActions();
-    this.setupLoader();
+    // REMOVED setupLoader() - This was causing the issue
     this.setupSmoothScrolling();
     this.setupTestimonials();
   }
@@ -222,7 +223,8 @@ class BSToursApp {
     window.addEventListener('scroll', handleScroll, { passive: true });
   }
 
-  setupScrollAnimations() {
+  // FIXED: Modified scroll animations to prevent initial fade
+  setupScrollAnimationsFixed() {
     const observerOptions = {
       threshold: 0.1,
       rootMargin: '0px 0px -50px 0px'
@@ -231,18 +233,28 @@ class BSToursApp {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.style.opacity = '1';
-          entry.target.style.transform = 'translateY(0)';
+          entry.target.classList.add('animate-in');
         }
       });
     }, observerOptions);
 
     const animatedElements = document.querySelectorAll('.animate-slide-up, .animate-fade-in');
     animatedElements.forEach(el => {
-      el.style.opacity = '0';
-      el.style.transform = 'translateY(30px)';
-      el.style.transition = 'all 0.6s ease-out';
-      observer.observe(el);
+      // Check if element is already in viewport on page load
+      const rect = el.getBoundingClientRect();
+      const isInViewport = rect.top < window.innerHeight && rect.bottom > 0;
+      
+      if (isInViewport) {
+        // If in viewport on load, show immediately without animation
+        el.style.opacity = '1';
+        el.style.transform = 'translateY(0)';
+      } else {
+        // If not in viewport, set up for animation
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(30px)';
+        el.style.transition = 'all 0.6s ease-out';
+        observer.observe(el);
+      }
     });
   }
 
@@ -368,25 +380,7 @@ Please contact me for booking details.`;
     window.addEventListener('scroll', handleScroll, { passive: true });
   }
 
-  setupLoader() {
-    const loader = document.getElementById('loader');
-    if (!loader) return;
-
-    const hideLoader = () => {
-      loader.style.opacity = '0';
-      setTimeout(() => {
-        loader.style.display = 'none';
-      }, 500);
-    };
-
-    if (document.readyState === 'complete') {
-      setTimeout(hideLoader, 1000);
-    } else {
-      window.addEventListener('load', () => {
-        setTimeout(hideLoader, 1000);
-      });
-    }
-  }
+  // REMOVED setupLoader() function entirely
 
   setupSmoothScrolling() {
     const anchorLinks = document.querySelectorAll('a[href^="#"]');
