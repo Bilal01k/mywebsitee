@@ -27,7 +27,7 @@ class BsHeader extends HTMLElement {
         </div>
       </nav>
 
-      <!-- REMOVED LOADER - This was causing the fade delay -->
+      
 
       <div class="quick-actions hidden">
         <a href="tel:+918050465875" class="quick-btn call-btn" aria-label="Call us">
@@ -355,30 +355,28 @@ Please contact me for booking details.`;
   }
 
   setupQuickActions() {
-    const quickActions = document.querySelector('.quick-actions');
-    const heroSection = document.querySelector('.hero');
+  const quickActions = document.querySelector('.quick-actions');
+  
+  if (!quickActions) return;
 
-    if (!quickActions || !heroSection) return;
+  let ticking = false;
 
-    let ticking = false;
+  const handleScroll = () => {
+    if (!ticking) {
+      requestAnimationFrame(() => {
+        if (window.scrollY > 300) { // Show after scrolling 300px on any page
+          quickActions.classList.remove('hidden');
+        } else {
+          quickActions.classList.add('hidden');
+        }
+        ticking = false;
+      });
+      ticking = true;
+    }
+  };
 
-    const handleScroll = () => {
-      if (!ticking) {
-        requestAnimationFrame(() => {
-          const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
-          if (window.scrollY > heroBottom) {
-            quickActions.classList.remove('hidden');
-          } else {
-            quickActions.classList.add('hidden');
-          }
-          ticking = false;
-        });
-        ticking = true;
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-  }
+  window.addEventListener('scroll', handleScroll, { passive: true });
+}
 
   // REMOVED setupLoader() function entirely
 
