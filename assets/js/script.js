@@ -35,7 +35,7 @@ class BsHeader extends HTMLElement {
         <a href="tel:+918050465875" class="quick-btn call-btn" aria-label="Call us">
           <i class="fas fa-phone"></i>
         </a>
-        <a href="https://wa.me/918618429796" class="quick-btn whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
+        <a href="https://wa.me/918050465875" class="quick-btn whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </div>
@@ -118,7 +118,7 @@ class SpecialFooter extends HTMLElement {
                 <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
                 <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                 <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://wa.me/918618429796" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://wa.me/918050465875" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
               </div>
             </div>
             <div class="footer-section">
@@ -549,7 +549,7 @@ Please contact me for booking details.`;
 📅 Check-Out: ${checkout}`;
                      
     const encodedMessage = encodeURIComponent(message);
-    const whatsappNumber = "918618429796";
+    const whatsappNumber = "918050465875";
     const url = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
 
     try {
