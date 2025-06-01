@@ -152,7 +152,7 @@ class SpecialFooter extends HTMLElement {
             </div>
           </div>
           <div class="footer-bottom">
-            <p>&copy; 2025 BS Tours & Travels. All rights reserved. | Designed with ❤️ for better travel experience</p>
+            <p>&copy; 2025 BS Tours and Travels. All rights reserved. | Designed with ❤️ for better travel experience</p>
           </div>
         </div>
       </footer>
