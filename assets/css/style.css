@@ -1867,10 +1867,7 @@ section {
                 font-size: 2rem;
             }
 
-            .rhero-section {
-               background-size: contain;
-              background-repeat: no-repeat;
-  }
+           
         }
 
         @media (max-width: 480px) {
@@ -1885,6 +1882,8 @@ section {
             .section-title, .resection-title {
                 font-size: 1.75rem;
             }
+
+            
 
 
 
