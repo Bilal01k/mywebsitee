@@ -79,7 +79,7 @@
             <div class="hero-content">
                 <div class="container">
                     <div class="hero-text animate-fade-in">
-                        <h1 class="hero-title">Your Reliable Cab <br> Service in Bangalore </h1>
+                        <h1 class="hero-title">Your Reliable Cab<br>Homestay Provider </h1>
                         <p class="hero-subtitle">
                             Experience comfort, safety, and punctuality with 
                             <span class="highlight">BS Tours and Travels</span>
@@ -136,234 +136,323 @@
                             <li><i class="fas fa-check" aria-hidden="true"></i> Flexible Packages</li>
                         </ul>
                     </article>
+                    
                     <article class="service-card animate-slide-up">
                         <div class="service-icon">
-                            <i class="fas fa-clock" aria-hidden="true"></i>
+                            <i class="fas fa-home" aria-hidden="true"></i>
                         </div>
-                        <h3>Hourly City Rides</h3>
-                        <p>Flexible hourly bookings for city travel, shopping, meetings, or sightseeing around Bangalore.</p>
+                        <h3>Resort and Rooms</h3>
+                        <p>Comfortable accommodation options with authentic local hospitality and modern amenities for a memorable stay.</p>
                         <ul class="service-features">
-                            <li><i class="fas fa-check" aria-hidden="true"></i> Hourly Basis</li>
-                            <li><i class="fas fa-check" aria-hidden="true"></i> Multiple Stops</li>
-                            <li><i class="fas fa-check" aria-hidden="true"></i> Waiting Time</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> AC Rooms</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Home-cooked Meals</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Free Wi-Fi</li>
                         </ul>
                     </article>
                 </div>
             </div>
         </section>
 
-
         <!-- Fleet Section -->
-        <section id="fleet" class="fleet">
+<section id="fleet" class="fleet">
+    <div class="container">
+        <header class="section-header">
+            <h2>Our Fleet</h2>
+            <p>Find the Right Vehicle for Every Occasion</p>
+        </header>
+        <div class="fleet-grid">
+            <article class="vehicle-card">
+                <div class="vehicle-img">
+                    <img src="./assets/images/SwiftDzire.png" 
+                         alt="Swift Dzire - 4 seater sedan car" 
+                         loading="lazy"
+                         width="300" 
+                         height="200">
+                </div>
+                <div class="vehicle-info">
+                    <h3>Swift Dzire</h3>
+                    <div class="vehicle-specs">
+                        <span><i class="fas fa-users" aria-hidden="true"></i> 4 Seater</span>
+                        <span><i class="fas fa-suitcase" aria-hidden="true"></i> 2 Bags</span>
+                    </div>
+                    <p>Perfect for short trips within the city</p>
+                    <div class="vehicle-price">₹899</div>
+                    <button onclick="document.getElementById('popup-swift-multi').style.display='block'" class="fbtn">Book Now</button>
+                </div>
+            </article>
+            <article class="vehicle-card">
+                <div class="vehicle-img">
+                    <img src="./assets/images/Accent.png" 
+                         alt="Hyundai Accent - 4 seater sedan car" 
+                         loading="lazy"
+                         width="300" 
+                         height="200">
+                </div>
+                <div class="vehicle-info">
+                    <h3>Hyundai Xcent</h3>
+                    <div class="vehicle-specs">
+                        <span><i class="fas fa-users" aria-hidden="true"></i> 4 Seater</span>
+                        <span><i class="fas fa-suitcase" aria-hidden="true"></i> 3 Bags</span>
+                    </div>
+                    <p>Comfortable ride for business</p>
+                    <div class="vehicle-price">₹899</div>
+                    <button onclick="document.getElementById('popup-Xcent').style.display='block'" class="fbtn">Book Now</button>  
+                </div>
+            </article>
+            <article class="vehicle-card">
+                <div class="vehicle-img">
+                    <img src="./assets/images/Innovacrysta.png" 
+                         alt="Toyota Innova Crysta - 6-7 seater SUV" 
+                         loading="lazy"
+                         width="300" 
+                         height="200">
+                </div>
+                <div class="vehicle-info">
+                    <h3>Innova Crysta</h3>
+                    <div class="vehicle-specs">
+                        <span><i class="fas fa-users" aria-hidden="true"></i> 6-7 Seater</span>
+                        <span><i class="fas fa-suitcase" aria-hidden="true"></i> 5 Bags</span>
+                    </div>
+                    <p>Spacious for families or groups</p>
+                    <div class="vehicle-price">₹1799</div>
+                    <button onclick="document.getElementById('popup-Innova-Crysta').style.display='block'" class="fbtn">Book Now</button>
+                </div>
+            </article>
+        </div>
+        <div class="view-all-container">
+            <a href="service.html#fleet" class="fbtn btn-large">
+                View All Our Fleet
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- POPUP with multiple owners -->
+<div id="popup-swift-multi" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="document.getElementById('popup-swift-multi').style.display='none'">&times;</span>
+        <h3>Select Cab Driver</h3>
+
+        <!-- Driver 1 -->
+        <div class="owner-box">
+            <p><strong>Name:</strong> Syed Mohammad Arshad Ali</p>
+            <p><strong>Cab #:</strong> KA21C8676</p>
+            <p><strong>Vehicle:</strong> Swift Dzire CNG</p>
+            <p><strong>Color:</strong> White</p>
+            <a href="https://wa.me/8618429796?text=Hi%20%2C%20I%20want%20to%20book%20your%20Swift%20Dzire%20CNG%20%20(KA21C8676)." 
+               target="_blank" 
+               class="whatsapp-book-btn">
+               Book on WhatsApp
+            </a>
+        </div>
+
+        <hr>
+
+        <!-- Driver 2 -->
+        <div class="owner-box">
+            <p><strong>Name:</strong> Ashweer</p>
+            <p><strong>Cab #:</strong> KA19AE8126</p>
+            <p><strong>Vehicle:</strong> Swift Dzire</p>
+            <p><strong>Color:</strong> Silver</p>
+            <a href="https://wa.me/8618429796?text=Hi%20%2C%20I%20want%20to%20book%20your%20Swift%20Dzire%20(KA19AE8126)." 
+               target="_blank" 
+               class="whatsapp-book-btn">
+               Book on WhatsApp
+            </a>
+        </div>
+
+        <hr>
+
+        <!-- Driver 3 -->
+        <div class="owner-box">
+            <p><strong>Name:</strong> MD NIZAMMUDDIN</p>
+            <p><strong>Cab #:</strong> KA02AG9328</p>
+            <p><strong>Vehicle:</strong> Swift Dzire</p>
+            <p><strong>Color:</strong> Silver</p>
+            <a href="https://wa.me/8618429796?text=Hi%20%2C%20I%20want%20to%20book%20your%20Swift%20Dzire%20(KA02AG9328)." 
+               target="_blank" 
+               class="whatsapp-book-btn">
+               Book on WhatsApp
+            </a>
+        </div>
+
+        <!-- Driver 4 -->
+        <div class="owner-box">
+            <p><strong>Name:</strong> Siddik</p>
+            <p><strong>Cab #:</strong> KA04AA6642</p>
+            <p><strong>Vehicle:</strong> Swift Dzire</p>
+            <p><strong>Color:</strong> Silver</p>
+            <a href="https://wa.me/8618429796?text=Hi%20%2C%20I%20want%20to%20book%20your%20Swift%20Dzire%20(KA04AA6642)." 
+               target="_blank" 
+               class="whatsapp-book-btn">
+               Book on WhatsApp
+            </a>
+        </div>
+
+        <!-- Driver 5 -->
+        <div class="owner-box">
+            <p><strong>Name:</strong> MAHAMMAD SHAHID</p>
+            <p><strong>Cab #:</strong> KA02AE5424</p>
+            <p><strong>Vehicle:</strong> Swift Dzire</p>
+            <p><strong>Color:</strong> Silver</p>
+            <a href="https://wa.me/8618429796?text=Hi%20%2C%20I%20want%20to%20book%20your%20Swift%20Dzire%20(KA02AE5424)." 
+               target="_blank" 
+               class="whatsapp-book-btn">
+               Book on WhatsApp
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- POPUP with multiple owners -->
+<div id="popup-Xcent" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="document.getElementById('popup-Xcent').style.display='none'">&times;</span>
+        <h3>Select Cab Driver</h3>
+
+        <!-- Driver 1 -->
+        <div class="owner-box">
+            <p><strong>Name:</strong> Mohammed soufar</p>
+            <p><strong>Cab #:</strong> KA20AA2403</p>
+            <p><strong>Vehicle:</strong> Hyundai xcent</p>
+            <p><strong>Color:</strong> White</p>
+            <a href="https://wa.me/8618429796?text=Hi%20Mohammed%20soufar%2C%20I%20want%20to%20book%20your%20Hyundai%20xcent%20%20(KA20AA2403)." 
+               target="_blank" 
+               class="whatsapp-book-btn">
+               Book on WhatsApp
+            </a>
+        </div>
+    </div>
+</div> 
+
+<!-- POPUP with multiple owners -->
+<div id="popup-Innova-Crysta" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="document.getElementById('popup-Innova-Crysta').style.display='none'">&times;</span>
+        <h3>Select Cab Driver</h3>
+
+        <!-- Driver 1 -->
+        <div class="owner-box">
+            <p><strong>Name:</strong> Mohammed soufar</p>
+            <p><strong>Cab #:</strong> KA20AA2403</p>
+            <p><strong>Vehicle:</strong> Innova Crysta</p>
+            <p><strong>Color:</strong> White</p>
+            <a href="https://wa.me/8618429796?text=Hi%20%2C%20I%20want%20to%20book%20your%20Innova%20Crysta%20%20(KA20AA2403)." 
+               target="_blank" 
+               class="whatsapp-book-btn">
+               Book on WhatsApp
+            </a>
+        </div>
+    </div>
+</div>
+
+      
+
+        <!-- Rooms Section -->
+        <section id="rooms" class="rooms-section">
             <div class="container">
-                <header class="section-header">
-                    <h2>Our Fleet</h2>
-                    <p>Find the Right Vehicle for Every Occasion</p>
-                </header>
-                <div class="fleet-grid">
-                    <article class="vehicle-card">
-                        <div class="vehicle-img">
-                            <img src="./assets/images/SwiftDzire.png" 
-                                 alt="Swift Dzire - 4 seater sedan car" 
-                                 loading="lazy"
-                                 width="300" 
-                                 height="200">
-                        </div>
-                        <div class="vehicle-info">
-                            <h3>Swift Dzire</h3>
-                            <div class="vehicle-specs">
-                                <span><i class="fas fa-users" aria-hidden="true"></i> 4 Seater</span>
-                                <span><i class="fas fa-suitcase" aria-hidden="true"></i> 2 Bags</span>
+                <h2 class="section-title">Homestay & Resort Accommodation</h2>
+                <div class="rooms-grid">
+                    <!-- Room Card 1 -->
+                    <div class="room-card">
+                        <img src="https://images.unsplash.com/photo-1634207523205-cf9ef97a31d1?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Lemon Tree Hotel" class="room-image">
+                        <div class="room-content">
+                            <h3 class="room-title">Lemon Tree Hotel</h3>
+                            <p class="room-price">Starting ₹899</p>
+                            <div class="location-tags">
+                                <span class="location-tag">Bangalore</span>
+                                <span class="location-tag">Mangalore</span>
+                                <span class="location-tag">Ooty</span>
+                                <span class="location-tag">Chikmagalur</span>
                             </div>
-                            <p>Perfect for short trips within the city</p>
-                            <div class="vehicle-price">₹899</div>
-    <button onclick="document.getElementById('popup-swift-multi').style.display='block'" class="fbtn">Book Now</button>                        </div>
-                    </article>
-                    <article class="vehicle-card">
-                        <div class="vehicle-img">
-                            <img src="./assets/images/Accent.png" 
-                                 alt="Hyundai Accent - 4 seater sedan car" 
-                                 loading="lazy"
-                                 width="300" 
-                                 height="200">
+                            <button onclick="openBookingModal('Lemon Tree Hotel', 'Bangalore')" class="book-button">
+                                Book Now
+                            </button>
                         </div>
-                        <div class="vehicle-info">
-                            <h3>Hyundai Xcent</h3>
-                            <div class="vehicle-specs">
-                                <span><i class="fas fa-users" aria-hidden="true"></i> 4 Seater</span>
-                                <span><i class="fas fa-suitcase" aria-hidden="true"></i> 3 Bags</span>
+                    </div>
+                    
+                    <!-- Homestay Card 1 -->
+                    <div class="room-card">
+                        <img src="https://images.unsplash.com/photo-1696393800666-1f7f81e0b2ce?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cozy Homestay" class="room-image">
+                        <div class="room-content">
+                            <h3 class="room-title">Cozy Mountain Homestay</h3>
+                            <p class="room-price">Starting ₹699</p>
+                            <div class="location-tags">
+                                <span class="location-tag">Ooty</span>
+                                <span class="location-tag">Chikmagalur</span>
+                                <span class="location-tag">Bangalore</span>
+                                <span class="location-tag">Mangalore</span>
                             </div>
-                            <p>Comfortable ride for business</p>
-                            <div class="vehicle-price">₹899</div>
-                            <button onclick="document.getElementById('popup-Xcent').style.display='block'" class="fbtn">Book Now</button>  
+                            <button onclick="openBookingModal('Cozy Mountain Homestay', 'Ooty')" class="book-button">
+                                Book Now
+                            </button>
                         </div>
-                    </article>
-                    <article class="vehicle-card">
-                        <div class="vehicle-img">
-                            <img src="./assets/images/Innovacrysta.png" 
-                                 alt="Toyota Innova Crysta - 6-7 seater SUV" 
-                                 loading="lazy"
-                                 width="300" 
-                                 height="200">
-                        </div>
-                        <div class="vehicle-info">
-                            <h3>Innova Crysta</h3>
-                            <div class="vehicle-specs">
-                                <span><i class="fas fa-users" aria-hidden="true"></i> 6-7 Seater</span>
-                                <span><i class="fas fa-suitcase" aria-hidden="true"></i> 5 Bags</span>
+                    </div>
+                    
+                    <!-- Resort Card 1 -->
+                    <div class="room-card">
+                        <img src="https://images.unsplash.com/photo-1596178067639-5c6e68aea6dc?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                             alt="Palm Paradise" 
+                             class="room-image">
+                        <div class="room-content">
+                            <h3 class="room-title">Palm Paradise</h3>
+                            <p class="room-price">Starting ₹1999</p>
+                            <div class="location-tags">
+                                <span class="location-tag">Ooty</span>
+                                <span class="location-tag">Chikmagalur</span>
+                                <span class="location-tag">Bangalore</span>
+                                <span class="location-tag">Mangalore</span>
                             </div>
-                            <p>Spacious for families or groups</p>
-                            <div class="vehicle-price">₹1799</div>
-                            <button onclick="document.getElementById('popup-Innova-Crysta').style.display='block'" class="fbtn">Book Now</button>
-                            </a>
+                            <button onclick="openBookingModal('Palm Paradise', 'Mangalore')" class="book-button">
+                                Book Now
+                            </button>
                         </div>
-                    </article>
+                    </div>
                 </div>
                 <div class="view-all-container">
-                    <a href="service.html#fleet" class="fbtn btn-large">
-                        View All Our Fleet
+                    <a href="rooms.html#rooms" class="fbtn fbtn-large">
+                        View All Our Rooms
                     </a>
                 </div>
             </div>
         </section>
 
 
-        <!-- POPUP with multiple owners -->
-<div id="popup-swift-multi" class="popup">
-  <div class="popup-content">
-    <span class="close" onclick="document.getElementById('popup-swift-multi').style.display='none'">&times;</span>
-    <h3>Select Cab Driver</h3>
+         <!-- Booking Modal -->
+    <div id="bookingModal" class="booking-modal hidden">
+        <div class="modal-content">
+            <span class="close" onclick="closeBookingModal()">&times;</span>
+            <h2>Book Room</h2>
+            <form id="bookingForm">
+                <input type="hidden" id="hotelName">
+                
+                <label>Location:</label>
+                <select id="location" required>
+                    <option value="">Select Location</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Mangalore">Mangalore</option>
+                    <option value="Ooty">Ooty</option>
+                    <option value="Chikmagalur">Chikmagalur</option>
+                </select>
 
-    <!-- Driver 1 -->
-    <div class="owner-box">
-      <p><strong>Name:</strong> Syed Mohammad Arshad Ali</p>
-      <p><strong>Cab #:</strong> KA21C8676</p>
-      <p><strong>Vehicle:</strong> Swift Dzire CNG </p>
-      <p><strong>Color:</strong> White</p>
-      <a href="https://wa.me/8618429796?text=Hi%20%2C%20I%20want%20to%20book%20your%20Swift%20Dzire CNG%20%20( KA21C8676)." 
-         target="_blank" 
-         class="whatsapp-book-btn">
-         Book on WhatsApp
-      </a>
-    </div>
+                <label>Members:</label>
+                <input type="number" id="members" min="1" placeholder="Enter number of guests" required>
 
-    <hr>
+                <label>Check-In:</label>
+                <input type="date" id="checkin" required>
 
-    <!-- Driver 2 -->
-    <div class="owner-box">
-      <p><strong>Name:</strong> Ashweer </p>
-       <p><strong>Cab #:</strong> KA19AE8126 </p>
-      <p><strong>Vehicle:</strong> Swift Dzire </p>
-      <p><strong>Color:</strong> Silver</p>
-      <a href="https://wa.me/8618429796?text=Hi%20%2C%20I%20want%20to%20book%20your%20Swift%20Dzire%20(KA19AE8126)." 
-         target="_blank" 
-         class="whatsapp-book-btn">
-        Book on WhatsApp
-      </a>
-    </div>
+                <label>Check-Out:</label>
+                <input type="date" id="checkout" required>
 
-
-     <hr>
-
-     <!-- Driver 3 -->
-    <div class="owner-box">
-      <p><strong>Name:</strong> MD NIZAMMUDDIN  </p>
-       <p><strong>Cab #:</strong> KA02AG9328 </p>
-      <p><strong>Vehicle:</strong> Swift Dzire </p>
-      <p><strong>Color:</strong> Silver</p>
-      <a href="https://wa.me/8618429796?text=Hi%20%2C%20I%20want%20to%20book%20your%20Swift%20Dzire%20(KA02AG9328)." 
-         target="_blank" 
-         class="whatsapp-book-btn">
-        Book on WhatsApp
-      </a>
-    </div>
-
-    <!-- Driver 4 -->
-    <div class="owner-box">
-      <p><strong>Name:</strong>   Siddik </p>
-       <p><strong>Cab #:</strong> KA04AA6642 </p>
-      <p><strong>Vehicle:</strong> Swift Dzire </p>
-      <p><strong>Color:</strong> Silver</p>
-      <a href="https://wa.me/8618429796?text=Hi%20%2C%20I%20want%20to%20book%20your%20Swift%20Dzire%20(KA02AG9328)." 
-         target="_blank" 
-         class="whatsapp-book-btn">
-        Book on WhatsApp
-      </a>
-    </div>
-
-     <!-- Driver 5 -->
-    <div class="owner-box">
-      <p><strong>Name:</strong> MAHAMMAD SHAHID </p>
-       <p><strong>Cab #:</strong> KA02AE5424 </p>
-      <p><strong>Vehicle:</strong> Swift Dzire </p>
-      <p><strong>Color:</strong> Silver</p>
-      <a href="https://wa.me/8618429796?text=Hi%20%2C%20I%20want%20to%20book%20your%20Swift%20Dzire%20(KA02AE5424)." 
-         target="_blank" 
-         class="whatsapp-book-btn">
-        Book on WhatsApp
-      </a>
+                <button type="button" onclick="sendWhatsApp()">
+                    <i class="fab fa-whatsapp"></i> Book on WhatsApp
+                </button>
+            </form>
+        </div>
     </div>
 
 
-
-
-  </div>
-</div>
-
-
-      <!-- POPUP with multiple owners -->
-<div id="popup-Xcent" class="popup">
-  <div class="popup-content">
-    <span class="close" onclick="document.getElementById('popup-Xcent').style.display='none'">&times;</span>
-    <h3>Select Cab Driver</h3>
-
-    <!-- Driver 1 -->
-    <div class="owner-box">
-      <p><strong>Name:</strong>Mohammed soufar</p>
-       <p><strong>Cab #:</strong> KA20AA2403</p>
-      <p><strong>Vehicle:</strong> Hyundai xcent</p>
-      <p><strong>Color:</strong> White</p>
-      <a href="https://wa.me/8618429796?text=Hi%20Mohammed soufar%2C%20I%20want%20to%20book%20your%20Hyundai%20xcent%20%20(KA20AA2403)." 
-         target="_blank" 
-         class="whatsapp-book-btn">
-         Book on WhatsApp
-      </a>
-    </div>
-
-    <hr>
-
-  </div>
-</div> 
-
-
-      
-
-
-    
-        <!-- POPUP with multiple owners -->
-<div id="popup-Innova-Crysta" class="popup">
-  <div class="popup-content">
-    <span class="close" onclick="document.getElementById('popup-Innova-Crysta').style.display='none'">&times;</span>
-    <h3>Select Cab Driver</h3>
-
-    <!-- Driver 1 -->
-    <div class="owner-box">
-      <p><strong>Name:</strong>Mohammed soufar</p>
-       <p><strong>Cab #:</strong> KA20AA2403</p>
-      <p><strong>Vehicle:</strong> Innova Crysta</p>
-      <p><strong>Color:</strong> White</p>
-      <a href="https://wa.me/8618429796?text=Hi%20%2C%20I%20want%20to%20book%20your%20Hyundai%20xcent%20%20(KA20AA2403)." 
-         target="_blank" 
-         class="whatsapp-book-btn">
-         Book on WhatsApp
-      </a>
-    </div>
-
-    <hr>
-
-  </div>
-</div>
-
+        
 
 
 
@@ -427,7 +516,7 @@
                                 <i class="fas fa-star" aria-hidden="true"></i>
                             </div>
                             <blockquote>
-                                <p>"Reliable and affordable cab service. I use them regularly for my office commute. Never had any issues. Keep up the good work!"</p>
+                          <p>"Comfortable and budget-friendly stay! I always choose this homestay for my weekend getaways. Clean rooms and peaceful environment. Highly recommended!"</p>
                             </blockquote>
                         </div>
                         <footer class="testimonial-author">
@@ -444,8 +533,6 @@
 
     <!-- Footer Component -->
     <special-footer></special-footer>
-
-   
 
     <!-- Scripts -->
     <script src="./assets/js/script.js"></script>

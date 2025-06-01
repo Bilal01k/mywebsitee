@@ -1,0 +1,335 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BS Tours & Travels - Premium cab services in Bangalore. Airport transfers, outstation trips, and hourly city rides. Book now via call or WhatsApp.">
+    <meta name="keywords" content="cab service, taxi, Bangalore, airport transfer, outstation travel, city rides, BS Tours, Travels">
+    <meta name="author" content="BS Tours & Travels">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="BS Tours And Travels - Premium Cab Services in Bangalore">
+    <meta property="og:description" content="Experience comfort, safety, and punctuality with BS Tours and Travels. Airport transfers, outstation trips, and city rides.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bstours.com">
+    <meta property="og:image" content="./assets/images/logo.png">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="BS Tours And Travels - Premium Cab Services">
+    <meta name="twitter:description" content="Premium cab services in Bangalore - Airport transfers, outstation trips, city rides">
+    
+    <title>BS Tours And Travels - Premium Cab Services in Bangalore</title>
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style">
+    <link rel="preload" href="./assets/css/style.css" as="style">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "BS Tours & Travels",
+        "description": "Premium cab services in Bangalore",
+        "url": "https://bstours.com",
+        "telephone": "+91-8050465875",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Bangalore",
+            "addressRegion": "Karnataka",
+            "addressCountry": "IN"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "12.9716",
+            "longitude": "77.5946"
+        },
+        "openingHours": "Mo-Su 00:00-23:59",
+        "priceRange": "₹₹",
+        "serviceArea": {
+            "@type": "City",
+            "name": "Bangalore"
+        }
+    }
+    </script>
+</head>
+<body>
+   
+    <!-- Header Component -->
+    <bs-header></bs-header>
+
+
+    <section class="rhero-section">
+        <div class="rcontainer">
+            <div class="rhero-content">
+                <h1 class="rhero-title">Discover the Ideal Stay for Every Traveler</h1>
+                <p class="rhero-description">Experience comfort and luxury at affordable prices across multiple locations</p>
+                <a href="#rooms">
+                <button class="rcta-button">Book Now</button>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+  <!-- Rooms Section -->
+    <section id="rooms" class="rooms-section">
+        <div class="container">
+            <h2 class="section-title">Comfortable Rooms</h2>
+            <div class="rooms-grid">
+                <!-- Room Card 1 -->
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1634207523205-cf9ef97a31d1?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Lemon Tree Hotel" class="room-image">
+                    <div class="room-content">
+                        <h3 class="room-title">Lemon Tree Hotel</h3>
+                        <p class="room-price">Starting ₹899</p>
+                        <div class="location-tags">
+                            <span class="location-tag">Bangalore</span>
+                            <span class="location-tag">Mangalore</span>
+                            <span class="location-tag">Ooty</span>
+                            <span class="location-tag">Chikmagalur</span>
+                        </div>
+                        <button onclick="openBookingModal('Lemon Tree Hotel')" class="book-button">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Room Card 2 -->
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1625334782252-da92af3ad887?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Iron Hotel" class="room-image">
+                    <div class="room-content">
+                        <h3 class="room-title">Iron Hotel</h3>
+                        <p class="room-price">Starting ₹1099</p>
+                        <div class="location-tags">
+                            <span class="location-tag">Bangalore</span>
+                            <span class="location-tag">Chikmagalur</span>
+                            <span class="location-tag">Ooty</span>
+                            <span class="location-tag">Mangalore</span>
+                        </div>
+                        <button onclick="openBookingModal('Iron Hotel')" class="book-button">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Room Card 3 -->
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1634207521511-2fd73cdaa83d?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Green Valley Hotel" class="room-image">
+                    <div class="room-content">
+                        <h3 class="room-title">Green Valley Hotel</h3>
+                        <p class="room-price">Starting ₹1299</p>
+                        <div class="location-tags">
+                            <span class="location-tag">Ooty</span>
+                            <span class="location-tag">Chikmagalur</span>
+                            <span class="location-tag">Bangalore</span>
+                            <span class="location-tag">Mangalore</span>
+                        </div>
+                        <button onclick="openBookingModal('Green Valley Hotel')" class="book-button">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Homestay Section -->
+    <section id="Homestay" class="Homestay-section">
+        <div class="container">
+            <h2 class="section-title">Homestay</h2>
+            <div class="rooms-grid">
+                <!-- Homestay Card 1 -->
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1696393800666-1f7f81e0b2ce?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cozy Homestay" class="room-image">
+                    <div class="room-content">
+                        <h3 class="room-title">Cozy Mountain Homestay</h3>
+                        <p class="room-price">Starting ₹699</p>
+                        <div class="location-tags">
+                            <span class="location-tag">Ooty</span>
+                            <span class="location-tag">Chikmagalur</span>
+                            <span class="location-tag">Bangalore</span>
+                            <span class="location-tag">Mangalore</span>
+                        </div>
+                        <button onclick="openBookingModal('Cozy Mountain Homestay')" class="book-button">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Homestay Card 2 -->
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1596178065887-1198b6148b2b?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Garden View Homestay" class="room-image">
+                    <div class="room-content">
+                        <h3 class="room-title">Garden View Homestay</h3>
+                        <p class="room-price">Starting ₹799</p>
+                        <div class="location-tags">
+                            <span class="location-tag">Ooty</span>
+                            <span class="location-tag">Chikmagalur</span>
+                            <span class="location-tag">Bangalore</span>
+                            <span class="location-tag">Mangalore</span>
+                        </div>
+                        <button onclick="openBookingModal('Garden View Homestay')" class="book-button">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Homestay Card 3 -->
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1723182711793-6bf77831e848?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Traditional Homestay" class="room-image">
+                    <div class="room-content">
+                        <h3 class="room-title">Traditional Family Homestay</h3>
+                        <p class="room-price">Starting ₹899</p>
+                        <div class="location-tags">
+                            <span class="location-tag">Ooty</span>
+                            <span class="location-tag">Chikmagalur</span>
+                            <span class="location-tag">Bangalore</span>
+                            <span class="location-tag">Mangalore</span>
+                        </div>
+                        <button onclick="openBookingModal('Traditional Family Homestay')" class="book-button">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resort Section -->
+    <section id="reresort" class="reresort-section">
+        <div class="recontainer">
+            <h2 class="resection-title">Resort</h2>
+            <div class="reresort-grid">
+                <!-- Resort Card 1 -->
+                <div class="reresort-card">
+                    <img src="https://images.unsplash.com/photo-1596178067639-5c6e68aea6dc?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                         alt="Palm Paradise" 
+                         class="reresort-image">
+                    <div class="recard-content">
+                        <h3 class="reresort-name">Palm Paradise</h3>
+                        <p class="reresort-price">Starting ₹1999</p>
+                        <div class="relocation-tags">
+                            <span class="location-tag">Ooty</span>
+                            <span class="location-tag">Chikmagalur</span>
+                            <span class="location-tag">Bangalore</span>
+                            <span class="location-tag">Mangalore</span>
+                        </div>
+                        <button onclick="openBookingModal('Palm Paradise')" class="book-button">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Resort Card 2 -->
+                <div class="reresort-card">
+                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" 
+                         alt="Royal Retreat" 
+                         class="reresort-image">
+                    <div class="recard-content">
+                        <h3 class="reresort-name">Royal Retreat</h3>
+                        <p class="reresort-price">Starting ₹2499</p>
+                        <div class="relocation-tags">
+                            <span class="location-tag">Ooty</span>
+                            <span class="location-tag">Chikmagalur</span>
+                            <span class="location-tag">Bangalore</span>
+                            <span class="location-tag">Mangalore</span>
+                        </div>
+                        <button onclick="openBookingModal('Royal Retreat')" class="book-button">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Resort Card 3 -->
+                <div class="reresort-card">
+                    <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" 
+                         alt="Lake View Resort" 
+                         class="reresort-image">
+                    <div class="recard-content">
+                        <h3 class="reresort-name">Lake View Resort</h3>
+                        <p class="reresort-price">Starting ₹1799</p>
+                        <div class="relocation-tags">
+                            <span class="location-tag">Ooty</span>
+                            <span class="location-tag">Chikmagalur</span>
+                            <span class="location-tag">Bangalore</span>
+                            <span class="location-tag">Mangalore</span>
+                        </div>
+                        <button onclick="openBookingModal('Lake View Resort')" class="book-button">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="booking-modal hidden">
+        <div class="modal-content">
+            <span class="close" onclick="closeBookingModal()">&times;</span>
+            <h2>Book Room</h2>
+            <form id="bookingForm">
+                <input type="hidden" id="hotelName">
+                
+                <label>Location:</label>
+                <select id="location" required>
+                    <option value="">Select Location</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Mangalore">Mangalore</option>
+                    <option value="Ooty">Ooty</option>
+                    <option value="Chikmagalur">Chikmagalur</option>
+                </select>
+
+                <label>Members:</label>
+                <input type="number" id="members" min="1" placeholder="Enter number of guests" required>
+
+                <label>Check-In:</label>
+                <input type="date" id="checkin" required>
+
+                <label>Check-Out:</label>
+                <input type="date" id="checkout" required>
+
+                <button type="button" onclick="sendWhatsApp()">
+                    <i class="fab fa-whatsapp"></i> Book on WhatsApp
+                </button>
+            </form>
+        </div>
+    </div>
+
+    
+    
+    
+    
+    
+    
+    <!-- Footer Component -->
+    <special-footer></special-footer>
+
+
+ <!-- Scripts -->
+    <script src="./assets/js/script.js"></script>
+    
+   
+
+
+
+</body>
+</html>
+
+
+
+
+
+

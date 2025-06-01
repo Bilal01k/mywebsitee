@@ -8,7 +8,7 @@ class BsHeader extends HTMLElement {
             <a href="index.html">
               <h2>
                 <i></i>
-                <span class="logo-full">BS Tours & Travels</span>
+                <span class="logo-full">BS Tours and Travels</span>
                 <span class="logo-short">BS Tours and Travels</span>
               </h2>
             </a>
@@ -17,7 +17,9 @@ class BsHeader extends HTMLElement {
             <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
             <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
             <li class="nav-item"><a href="service.html" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="rooms.html" class="nav-link">Rooms</a></li>
             <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+
           </ul>
           <div class="nav-toggle" id="mobile-menu">
             <span class="bar"></span>
@@ -110,7 +112,7 @@ class SpecialFooter extends HTMLElement {
         <div class="container">
           <div class="footer-content">
             <div class="footer-section">
-              <h3>BS Tours & Travels</h3>
+              <h3>BS Tours and Travels</h3>
               <p>Your trusted travel partner in Bangalore. We provide safe, reliable, and comfortable cab services 24/7.</p>
               <div class="social-links">
                 <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
@@ -126,6 +128,7 @@ class SpecialFooter extends HTMLElement {
                 <li><a href="about.html">About</a></li>
                 <li><a href="service.html">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="room.html">Rooms</a></li>
               </ul>
             </div>
             <div class="footer-section">
@@ -135,6 +138,7 @@ class SpecialFooter extends HTMLElement {
                 <li><a href="service.html#services">Outstation Trips</a></li>
                 <li><a href="service.html#services">City Rides</a></li>
                 <li><a href="service.html#services">Corporate Bookings</a></li>
+                <li><a href="rooms.html#room">Rooms</a></li>
               </ul>
             </div>
             <div class="footer-section">
@@ -178,14 +182,14 @@ class BSToursApp {
 
   initializeApp() {
     this.setupActiveNavigation();
-    this.setupScrollAnimationsFixed(); // FIXED VERSION
+    this.setupScrollAnimationsFixed();
     this.setupScrollToTop();
     this.setupContactForm();
     this.setupHeroScroll();
     this.setupQuickActions();
-    // REMOVED setupLoader() - This was causing the issue
     this.setupSmoothScrolling();
     this.setupTestimonials();
+    this.setupRoomBooking(); // NEW: Added room booking setup
   }
 
   setupActiveNavigation() {
@@ -223,7 +227,6 @@ class BSToursApp {
     window.addEventListener('scroll', handleScroll, { passive: true });
   }
 
-  // FIXED: Modified scroll animations to prevent initial fade
   setupScrollAnimationsFixed() {
     const observerOptions = {
       threshold: 0.1,
@@ -240,16 +243,13 @@ class BSToursApp {
 
     const animatedElements = document.querySelectorAll('.animate-slide-up, .animate-fade-in');
     animatedElements.forEach(el => {
-      // Check if element is already in viewport on page load
       const rect = el.getBoundingClientRect();
       const isInViewport = rect.top < window.innerHeight && rect.bottom > 0;
       
       if (isInViewport) {
-        // If in viewport on load, show immediately without animation
         el.style.opacity = '1';
         el.style.transform = 'translateY(0)';
       } else {
-        // If not in viewport, set up for animation
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';
         el.style.transition = 'all 0.6s ease-out';
@@ -302,13 +302,11 @@ class BSToursApp {
       const service = formData.get('service')?.trim();
       const message = formData.get('message')?.trim();
 
-      // Basic validation
       if (!name || !phone || !service) {
         alert('Please fill in all required fields.');
         return;
       }
 
-      // Phone number validation (basic Indian mobile number format)
       const phoneRegex = /^[6-9]\d{9}$/;
       const cleanPhone = phone.replace(/\D/g, '');
       if (!phoneRegex.test(cleanPhone)) {
@@ -355,30 +353,28 @@ Please contact me for booking details.`;
   }
 
   setupQuickActions() {
-  const quickActions = document.querySelector('.quick-actions');
-  
-  if (!quickActions) return;
+    const quickActions = document.querySelector('.quick-actions');
+    
+    if (!quickActions) return;
 
-  let ticking = false;
+    let ticking = false;
 
-  const handleScroll = () => {
-    if (!ticking) {
-      requestAnimationFrame(() => {
-        if (window.scrollY > 300) { // Show after scrolling 300px on any page
-          quickActions.classList.remove('hidden');
-        } else {
-          quickActions.classList.add('hidden');
-        }
-        ticking = false;
-      });
-      ticking = true;
-    }
-  };
+    const handleScroll = () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          if (window.scrollY > 300) {
+            quickActions.classList.remove('hidden');
+          } else {
+            quickActions.classList.add('hidden');
+          }
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
 
-  window.addEventListener('scroll', handleScroll, { passive: true });
-}
-
-  // REMOVED setupLoader() function entirely
+    window.addEventListener('scroll', handleScroll, { passive: true });
+  }
 
   setupSmoothScrolling() {
     const anchorLinks = document.querySelectorAll('a[href^="#"]');
@@ -397,7 +393,6 @@ Please contact me for booking details.`;
             block: 'start'
           });
 
-          // Close mobile menu if it's open
           const navMenu = document.querySelector('.nav-menu');
           const mobileMenu = document.querySelector('#mobile-menu');
           if (navMenu && mobileMenu) {
@@ -414,7 +409,6 @@ Please contact me for booking details.`;
     
     if (this.testimonials.length === 0) return;
 
-    // Initial setup
     this.testimonials.forEach((testimonial, index) => {
       testimonial.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
       if (index === 0) {
@@ -447,6 +441,127 @@ Please contact me for booking details.`;
     }, 4000);
   }
 
+  // NEW: Room booking functionality
+  setupRoomBooking() {
+    // Set minimum date to today for date inputs
+    const today = new Date().toISOString().split('T')[0];
+    const checkinInput = document.getElementById('checkin');
+    const checkoutInput = document.getElementById('checkout');
+    
+    if (checkinInput && checkoutInput) {
+      checkinInput.setAttribute('min', today);
+      checkoutInput.setAttribute('min', today);
+      
+      // Update checkout min date when checkin changes
+      checkinInput.addEventListener('change', () => {
+        const checkinDate = checkinInput.value;
+        checkoutInput.setAttribute('min', checkinDate);
+      });
+    }
+
+    // Setup booking form if it exists
+    const bookingForm = document.getElementById('bookingForm');
+    if (bookingForm) {
+      bookingForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        this.sendWhatsAppBooking();
+      });
+    }
+
+    // Setup modal event listeners
+    this.setupBookingModal();
+  }
+
+  // NEW: Open booking modal function
+  openBookingModal(hotelName) {
+    const hotelNameInput = document.getElementById('hotelName');
+    const bookingModal = document.getElementById('bookingModal');
+    
+    if (hotelNameInput && bookingModal) {
+      hotelNameInput.value = hotelName;
+      bookingModal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  // NEW: Close booking modal function
+  closeBookingModal() {
+    const bookingModal = document.getElementById('bookingModal');
+    const bookingForm = document.getElementById('bookingForm');
+    
+    if (bookingModal) {
+      bookingModal.classList.add('hidden');
+      document.body.style.overflow = 'auto';
+      
+      if (bookingForm) {
+        bookingForm.reset();
+      }
+    }
+  }
+
+  // NEW: Setup booking modal event listeners
+  setupBookingModal() {
+    const bookingModal = document.getElementById('bookingModal');
+    
+    if (bookingModal) {
+      // Close modal when clicking outside
+      bookingModal.addEventListener('click', (e) => {
+        if (e.target === bookingModal) {
+          this.closeBookingModal();
+        }
+      });
+    }
+
+    // Close modal with Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        this.closeBookingModal();
+      }
+    });
+  }
+
+  // NEW: Send WhatsApp booking message
+  sendWhatsAppBooking() {
+    const hotel = document.getElementById('hotelName')?.value;
+    const location = document.getElementById('location')?.value;
+    const members = document.getElementById('members')?.value;
+    const checkin = document.getElementById('checkin')?.value;
+    const checkout = document.getElementById('checkout')?.value;
+
+    if (!location || !members || !checkin || !checkout) {
+      alert("Please fill all fields.");
+      return;
+    }
+
+    // Validate dates
+    const checkinDate = new Date(checkin);
+    const checkoutDate = new Date(checkout);
+                     
+    if (checkoutDate <= checkinDate) {
+      alert("Check-out date must be after check-in date.");
+      return;
+    }
+
+    const message = `Hi, I would like to book a room at *${hotel}* in *${location}*.
+
+👥 Members: ${members}
+📅 Check-In: ${checkin}
+📅 Check-Out: ${checkout}`;
+                     
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappNumber = "918618429796";
+    const url = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+    try {
+      window.open(url, '_blank', 'noopener,noreferrer');
+      this.closeBookingModal();
+      alert('Thank you! You will be redirected to WhatsApp to complete your room booking.');
+    } catch (error) {
+      console.error('Error opening WhatsApp:', error);
+      alert('Unable to open WhatsApp. Please call us directly.');
+    }
+  }
+
   // Cleanup method for SPA scenarios
   destroy() {
     if (this.testimonialInterval) {
@@ -454,6 +569,25 @@ Please contact me for booking details.`;
     }
   }
 }
+
+// Make booking functions available globally for onclick handlers
+window.openBookingModal = function(hotelName) {
+  if (window.BSToursApp) {
+    window.BSToursApp.openBookingModal(hotelName);
+  }
+};
+
+window.closeBookingModal = function() {
+  if (window.BSToursApp) {
+    window.BSToursApp.closeBookingModal();
+  }
+};
+
+window.sendWhatsApp = function() {
+  if (window.BSToursApp) {
+    window.BSToursApp.sendWhatsAppBooking();
+  }
+};
 
 // Initialize the application
 const bsToursApp = new BSToursApp();
