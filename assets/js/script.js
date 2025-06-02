@@ -128,7 +128,7 @@ class SpecialFooter extends HTMLElement {
                 <li><a href="about.html">About</a></li>
                 <li><a href="service.html">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="room.html">Rooms</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
               </ul>
             </div>
             <div class="footer-section">
@@ -138,7 +138,7 @@ class SpecialFooter extends HTMLElement {
                 <li><a href="service.html#services">Outstation Trips</a></li>
                 <li><a href="service.html#services">City Rides</a></li>
                 <li><a href="service.html#services">Corporate Bookings</a></li>
-                <li><a href="rooms.html#room">Rooms</a></li>
+                <li><a href="rooms.html#rooms">Rooms</a></li>
               </ul>
             </div>
             <div class="footer-section">
